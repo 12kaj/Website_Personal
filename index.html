@@ -81,7 +81,7 @@
     </section>
     <section id="resume" class="resume_section">
       <div class="resume_container">
-        <h2 class="resume_title">Wy hire me?</h2>
+        <h2 class="resume_title">Why Hire Me?</h2>
         <div class="resume_content">
           <div class="resume_item">
             <h3 class="resume_heading">Experience</h3>
@@ -192,86 +192,146 @@
     </section>
     <section id="contact" class="contact_section">
       <div class="contact_container">
-        <h2 class="contact_title">Contact Me</h2>
-        <div class="contact_content">
-          <div class="contact_info">
-            <div class="contact_card">
-              <i class="ri-mail-line"></i>
-              <h3>Email</h3>
-              <p><a href="mailto:karanroyka@gmail.com">karanroya@gmail.com</a></p>
-            </div>
-            <div class="contact_card">
-              <i class="ri-phone-line"></i>
-              <h3>Phone</h3>
-              <p><a href="tel:+1234567890">082202837416</a></p>
-            </div>
-            <div class="contact_card">
-              <i class="ri-map-pin-line"></i>
-              <h3>Location</h3>
-              <p>Pekanbaru, Jl Suka Jaya</p>
-            </div>
+          <h2 class="contact_title">Contact Me</h2>
+          <div class="contact_content">
+              <div class="contact_info">
+                  <div class="contact_card">
+                      <i class="ri-mail-line"></i>
+                      <h3>Email</h3>
+                      <p><a href="mailto:karanroyka@gmail.com">karanroyka@gmail.com</a></p>
+                  </div>
+                  <div class="contact_card">
+                      <i class="ri-phone-line"></i>
+                      <h3>Phone</h3>
+                      <p><a href="tel:+1234567890">082202837416</a></p>
+                  </div>
+                  <div class="contact_card">
+                      <i class="ri-map-pin-line"></i>
+                      <h3>Location</h3>
+                      <p>Pekanbaru, Jl Suka Jaya</p>
+                  </div>
+                  <div class="contact_card">
+                      <i class="ri-instagram-line"></i>
+                      <h3>Instagram</h3>
+                      <p><a href="https://www.instagram.com/karanroyka" target="_blank">@karanroyka</a></p>
+                  </div>
+                  <div class="contact_card">
+                      <i class="ri-facebook-line"></i>
+                      <h3>Facebook</h3>
+                      <p><a href="https://www.facebook.com/profile.php?id=100023651350349&mibextid=ZbWKwL" target="_blank">Karan Royka</a></p>
+                  </div>
+              </div>
+              <form id="contactForm" action="#" method="POST" class="contact_form">
+                  <div class="form_group">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" name="name" placeholder="Your Name" required />
+                  </div>
+                  <div class="form_group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" placeholder="Your Email" required />
+                  </div>
+                  <div class="form_group">
+                      <label for="message">Message</label>
+                      <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                  </div>
+                  <button type="submit" class="contact_btn">Send Message</button>
+              </form>
           </div>
-          <form action="#" method="POST" class="contact_form">
-            <div class="form_group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your Name" required />
-            </div>
-            <div class="form_group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="Your Email" required />
-            </div>
-            <div class="form_group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-            </div>
-            <button type="submit" class="contact_btn">Send Message</button>
-          </form>
-        </div>
       </div>
-    </section>        
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
+  </section>
+
+  <!-- Bagian Footer -->
+  <footer class="footer">
+      <p>&copy; 2024 Karan Royka. Semua Hak Dilindungi. <a href="#contact">Hubungi Saya</a></p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="notificationModal" class="modal">
+      <div class="modal_content">
+          <span class="close">&times;</span>
+          <p>Pesan Anda telah dikirim. Terima kasih telah menghubungi kami!</p>
+      </div>
+  </div>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
       ScrollReveal().reveal('.about_content', {
-        origin: 'left',
-        distance: '50px',
-        duration: 1000,
-        delay: 200,
-        easing: 'ease-in-out',
-        reset: true,
+          origin: 'left',
+          distance: '50px',
+          duration: 1000,
+          delay: 200,
+          easing: 'ease-in-out',
+          reset: true,
       });
       ScrollReveal().reveal('.about_image', {
-        origin: 'right',
-        distance: '50px',
-        duration: 1000,
-        delay: 200,
-        easing: 'ease-in-out',
-        reset: true,
+          origin: 'right',
+          distance: '50px',
+          duration: 1000,
+          delay: 200,
+          easing: 'ease-in-out',
+          reset: true,
       });
       ScrollReveal().reveal('.resume_section', {
-        origin: 'bottom',
-        distance: '50px',
-        duration: 1000,
-        delay: 200,
-        easing: 'ease-in-out',
-        reset: true,
+          origin: 'bottom',
+          distance: '50px',
+          duration: 1000,
+          delay: 200,
+          easing: 'ease-in-out',
+          reset: true,
       });
       ScrollReveal().reveal('.portfolio_item', {
-        origin: 'bottom',
-        distance: '30px',
-        duration: 1000,
-        delay: 200,
-        easing: 'ease-in-out',
-        interval: 200, // Delay between animations of the items
-        reset: true,
+          origin: 'bottom',
+          distance: '30px',
+          duration: 1000,
+          delay: 200,
+          easing: 'ease-in-out',
+          interval: 200,
+          reset: true,
       });
       ScrollReveal().reveal('.contact_section', {
-        origin: 'bottom',
-        distance: '30px',
-        duration: 1000,
-        delay: 200,
-        easing: 'ease-in-out',
-        reset: true,
+          origin: 'bottom',
+          distance: '30px',
+          duration: 1000,
+          delay: 200,
+          easing: 'ease-in-out',
+          reset: true,
       });
-    </script>
-  </body>
+
+      // Toggle menu untuk versi mobile
+      const checkbox = document.querySelector('.checkbox');
+      const navLinks = document.querySelector('ul');
+
+      checkbox.addEventListener('change', () => {
+          if (checkbox.checked) {
+              navLinks.style.left = '0';
+          } else {
+              navLinks.style.left = '-100%';
+          }
+      });
+
+      // Menangani pengiriman formulir
+      const modal = document.getElementById('notificationModal');
+      const span = document.getElementsByClassName('close')[0];
+
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Mencegah pengiriman formulir secara default
+
+          // Menampilkan modal
+          modal.style.display = 'block';
+
+          // Reset formulir setelah pengiriman
+          this.reset();
+      });
+
+      span.onclick = function() {
+          modal.style.display = 'none';
+      }
+
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = 'none';
+          }
+      }
+  </script>
+</body>
 </html>
